@@ -298,8 +298,8 @@ public class ReleaseActivity extends AppCompatActivity {
         public class ViewHolder extends RecyclerView.ViewHolder {
             private final TextView mIdTextView;
             private final TextView mDateTimeTextView;
-            private final TextView mEmployeeSurnameTextView;
-            private final TextView mEmployeeNameTextView;
+            private final TextView mSurnameTextView;
+            private final TextView mNameTextView;
 
             public ViewHolder(View v) {
                 super(v);
@@ -312,8 +312,8 @@ public class ReleaseActivity extends AppCompatActivity {
                 });
                 mIdTextView = (TextView) v.findViewById(R.id.id_release);
                 mDateTimeTextView = (TextView) v.findViewById(R.id.date_creation);
-                mEmployeeSurnameTextView = (TextView) v.findViewById(R.id.employee_surname);
-                mEmployeeNameTextView = (TextView) v.findViewById(R.id.employee_name);
+                mSurnameTextView = (TextView) v.findViewById(R.id.employee_surname);
+                mNameTextView = (TextView) v.findViewById(R.id.employee_name);
             }
 
             public TextView getIdTextView() {
@@ -324,12 +324,12 @@ public class ReleaseActivity extends AppCompatActivity {
                 return mDateTimeTextView;
             }
 
-            public TextView getEmployeeSurnametextView() {
-                return mEmployeeSurnameTextView;
+            public TextView getSurnametextView() {
+                return mSurnameTextView;
             }
 
-            public TextView getEmployeeNametextView() {
-                return mEmployeeNameTextView;
+            public TextView getNametextView() {
+                return mNameTextView;
             }
         }
 
@@ -359,8 +359,8 @@ public class ReleaseActivity extends AppCompatActivity {
             // with that element
             holder.getIdTextView().setText(String.valueOf(mReleaseView.get(position).getId()));
             holder.getDateTimeTextView().setText(mReleaseView.get(position).getCreationDateTime());
-            holder.getEmployeeSurnametextView().setText(mReleaseView.get(position).getSurname());
-            holder.getEmployeeNametextView().setText(mReleaseView.get(position).getName());
+            holder.getSurnametextView().setText(mReleaseView.get(position).getSurname());
+            holder.getNametextView().setText(mReleaseView.get(position).getName());
         }
 
         // Return the size of your dataset (invoked by the layout manager)

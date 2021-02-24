@@ -13,6 +13,18 @@
         android:text="Id"
         android:textSize="@dimen/release_list_item_text_size" />
 
+    <TextView
+        android:id="@+id/release_status"
+        android:layout_width="71dp"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/employee_surname"
+        android:layout_toEndOf="@+id/date_creation"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="status"
+        android:textSize="@dimen/release_list_item_text_size" />
+
     <LinearLayout
         android:id="@+id/first_line"
         android:layout_width="match_parent"
@@ -49,8 +61,8 @@
         android:layout_width="173dp"
         android:layout_height="62dp"
         android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/date_creation"
         android:gravity="bottom|center_horizontal"
         android:padding="1dp"
         android:text="Employee surname"
@@ -61,8 +73,8 @@
         android:layout_width="173dp"
         android:layout_height="62dp"
         android:layout_below="@+id/employee_surname"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="0dp"
-        android:layout_toEndOf="@id/date_creation"
         android:gravity="center_horizontal|top"
         android:padding="1dp"
         android:text="Employee name"
