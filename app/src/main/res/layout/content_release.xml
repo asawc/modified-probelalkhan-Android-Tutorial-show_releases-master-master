@@ -6,10 +6,10 @@
 
     <TextView
         android:id="@+id/id_release"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="125dp"
         android:gravity="center"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="Id"
         android:textSize="@dimen/release_list_item_text_size" />
 
@@ -35,36 +35,36 @@
 
     <TextView
         android:id="@+id/date_creation"
-        android:layout_width="171dp"
+        android:layout_width="120dp"
         android:layout_height="124dp"
         android:layout_marginStart="0dp"
         android:layout_toEndOf="@+id/id_release"
-        android:gravity="center"
-        android:padding="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
         android:text="10-03-2020 09:40:00"
         android:textSize="@dimen/release_list_item_text_size" />
 
     <TextView
         android:id="@+id/employee_surname"
-        android:layout_width="193dp"
+        android:layout_width="173dp"
         android:layout_height="62dp"
         android:layout_alignParentTop="false"
-        android:layout_alignParentEnd="false"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/date_creation"
-        android:gravity="center"
-        android:padding="10dp"
+        android:gravity="bottom|center_horizontal"
+        android:padding="1dp"
         android:text="Employee surname"
         android:textSize="@dimen/release_list_item_text_size" />
 
     <TextView
         android:id="@+id/employee_name"
-        android:layout_width="193dp"
+        android:layout_width="173dp"
         android:layout_height="62dp"
         android:layout_below="@+id/employee_surname"
-        android:layout_alignParentEnd="true"
-        android:gravity="center"
-        android:padding="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/date_creation"
+        android:gravity="center_horizontal|top"
+        android:padding="1dp"
         android:text="Employee name"
         android:textSize="@dimen/release_list_item_text_size" />
 
